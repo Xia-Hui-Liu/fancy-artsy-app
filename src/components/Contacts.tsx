@@ -9,23 +9,23 @@ type ContactProps = {
 const Contacts: React.FC<ContactProps> = ({ isContactPage }) => {
   return (
     <div className="container">
-      <div className="flex items-center justify-center mb-6 text-center">
+      <div className="flex mb-6 text-left">
         <div className="mr-4 pt-20 ">
           {isContactPage ? (
             <>
             <div>
-                <h3 className="text-2xl font-bold">上海菲世科技有限公司</h3>
-                <p className="text-lg">Shanghai Fancy Technology Co. Ltd</p>
+                <h3 className="text-2xl font-bold text-center">上海菲世科技有限公司</h3>
+                <p className="text-lg text-center">Shanghai Fancy Technology Co. Ltd</p>
             </div>
             <div>
-                <p className='text-2xl mb-10 mt-10' style={{ textDecoration: "underline" }}>Contact Us</p>
-                <p className="text">Mobile: +86 134 0169 3760 (China) +63 096 1271 8816 (Philippines)</p>
-                <p className="text">Viber: +63 096 1271 8816 WhatsApp: +63 096 1271 8816</p>
-                <p className="email">Email: 
-                    <a href="mailto:fancyartsy82@gmail.com" className="email-link">fancyartsy82@gmail.com</a> 
+                <p className='text-2xl mb-10 mt-10 text-center' style={{ textDecoration: "underline" }}>Contact Us</p>
+                <p className="text">Mobile:&nbsp; +86 134 0169 3760 (China)&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; +63 096 1271 8816 (Philippines)</p>
+                <p className="text">Viber: &nbsp;+63 096 1271 8816&nbsp;&nbsp;&nbsp;&nbsp;<br></br> WhatsApp:&nbsp; +63 096 1271 8816</p>
+                <p className="email">Email: &nbsp;
+                    <a href="mailto:fancyartsy82@gmail.com" className="email-link">fancyartsy82@gmail.com</a> &nbsp;&nbsp;&nbsp;&nbsp;
                     <a href="mailto:lxy198281@163.com" className="email-link">lxy198281@163.com</a>
                 </p>
-                <p className="text">
+                <p className="text mt-5">
                     Add: 199#, Qianyu Public Road,
                     Chenjia Town,
                     Chongming District,

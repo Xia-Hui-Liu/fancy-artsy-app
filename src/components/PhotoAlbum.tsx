@@ -5,12 +5,10 @@ import Image from "next/image";
 const PhotoAlbum: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<number>(0);
   const imageList = [
-    '/images/IMG1.JPG',
-    '/images/IMG2.JPG',
-    '/images/IMG3.JPG',
-    '/images/IMG4.JPG',
-    '/images/IMG5.JPG',
-    '/images/IMG6.JPG'
+    '/images/craft-resin.jpg',
+    '/images/deep-pour.jpg',
+    '/images/floor-resin.jpg',
+    '/images/industrial-resin.jpg',
   ];
 
   useEffect(() => {

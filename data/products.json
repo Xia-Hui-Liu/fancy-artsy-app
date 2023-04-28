@@ -3,13 +3,13 @@
       "id": 1,
       "name": "Art and decoration",
       "router":"Art-and-decoration",
-      "imageUrl": "/images/craft-resin.jpg"
+      "imageUrl": "/images/IMG1.JPG"
     },
     {
       "id": 2,
       "name": "Deep pour resin",
       "router":"Deep-pour-resin",
-      "imageUrl": "/images/deep-pour.jpg"
+      "imageUrl": "/images/IMG3.JPG"
     },
     {
       "id": 3,
@@ -20,7 +20,7 @@
     {
         "id": 4,
         "name": "Industrial resin",
-        "imageUrl": "/images/industrial-resin.jpg"
+        "imageUrl": "/images/IMG2.JPG"
       }
 ]
   
