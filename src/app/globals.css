@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.heading-sub {
+  font-size: 1 rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.phone {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.email {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.email-link {
+  margin-right:10px ;
+  color: #6B46C1; /* set link color to purple */
+}
+
+.email-link:hover {
+  text-decoration: underline; /* add underline on hover */
+}
+
+.search-bar {
+  height: 40px;
+  border: solid 1px lightgrey
+}
+.dropdown-menu {
+  min-width: 20rem;
+  padding: 1rem;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+}
