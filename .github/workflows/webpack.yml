@@ -34,7 +34,7 @@ jobs:
       run: npm install
 
     - name: Build
-      run: npm run build
+      run: next build
 
     - name: Publish artifact
       uses: actions/upload-artifact@v2
