@@ -28,8 +28,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed flex top-0 left-0 right-0 bg-white px-4 py-0 w-full h-30 items-center justify-between my-0 font-serif">
-      <div className="flex items-center ml-20 p-0 mr-30">
+    <nav className="fixed flex top-0 left-0 right-0 bg-white px-4 py-0 w-full h-30 items-center justify-between mb-10 font-serif">
+      <div className="flex items-center ml-20 p-0 mr-10">
         <Image src="/images/logo.jpg" alt="logo" width={130} height={130} />
       </div>
       <div className="block lg:hidden">
@@ -47,12 +47,12 @@ const Navbar: React.FC = () => {
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-base lg:flex-grow flex justify-center">
           <Link legacyBehavior href="/">
-            <a className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200 mr-10">
+            <a className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200 mr-20">
               Home
             </a>
           </Link>
           <Link legacyBehavior href="/about">
-            <a className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200 mr-10">
+            <a className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200 mr-20">
               About
             </a>
           </Link>
@@ -60,12 +60,12 @@ const Navbar: React.FC = () => {
             <Link
               legacyBehavior
               href="/products"
-              className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200 mr-10"
+              className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200 mr-20"
             >
               <a
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
-                className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200 mr-10"
+                className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200 mr-20"
               >
                 Products
               </a>
@@ -74,12 +74,12 @@ const Navbar: React.FC = () => {
           </div>
 
           <Link legacyBehavior href="/news">
-            <a className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200 mr-10">
+            <a className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200 mr-20">
               News
             </a>
           </Link>
           <Link legacyBehavior href="/contact">
-            <a className="block lg:inline-block text-xl text-center text-gray-600 hover:text-gray-200">
+            <a className="block lg:inline-block text-2xl text-center text-gray-600 hover:text-gray-200">
               Contact Us
             </a>
           </Link>

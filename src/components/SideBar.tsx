@@ -19,9 +19,9 @@ const SideBar:React.FC = () => {
     ), [searchResults]);
 
     return (
-        <div className="w-1/4 p-8 bg-white">
+        <div className="w-1/4 p-10 bg-white">
             <SearchBar onSearch={handleSearch} />
-            <div className="mt-20 text-base text-center">
+            <div className="mt-10 text-base text-center mb-20">
                 <p>Latest News</p>
                 <hr></hr>
                 {filteredNews}

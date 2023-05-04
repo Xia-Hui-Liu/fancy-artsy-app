@@ -19,7 +19,7 @@ const PhotoAlbum: React.FC = () => {
   }, [imageList.length]);
 
   return (
-    <div className="relative h-96 w-screen overflow-hidden my-0 p-0">
+    <div className="relative h-96 w-screen overflow-hidden mt-5 p-0">
       {imageList.map((image, index) => (
         <div
           key={image}
