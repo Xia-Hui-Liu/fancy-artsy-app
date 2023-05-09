@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-20 text-center py-4 bg-white my-0">
+    <footer className="mt-20 text-center py-4 my-0">
       <div className="flex justify-center space-x-4 mb-8">
         <a href="https://www.facebook.com/fancyartsy82/" target="_blank" rel="noopener noreferrer">
           <Image src="https://img.icons8.com/fluent/48/000000/facebook-new.png" alt="facebook" width={40} height={40} />

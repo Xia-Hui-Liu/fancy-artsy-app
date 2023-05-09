@@ -6,7 +6,7 @@ import Products from "@/components/Products";
 
 const Home: React.FC = () => {
   return (
-    <div className="flex flex-col items-center m-h-screen mt-24">
+    <div>
       <PhotoAlbum />
       <About isHomePage={true}/>
       <Products products={[]} />

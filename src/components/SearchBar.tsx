@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   };
 
   return (
-    <div>
+    <div className="searchBar">
       <div className="text-base text-center tracking-tight text-gray-900 py-0 my-0">Categories</div>
       <hr></hr>
       <div className="relative">

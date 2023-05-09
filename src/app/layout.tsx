@@ -28,7 +28,7 @@ export default function RootLayout({
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta name="description" content={metadata.description} />
       </Head>
-      <body className={`${montserrat.variable} flex flex-col min-h-screen bg-white`}>
+      <body className={`${montserrat.variable} bg-white font-serif`}>
         <main>
           <Navbar />
           {children}
