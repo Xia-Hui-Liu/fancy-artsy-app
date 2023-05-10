@@ -1,20 +1,36 @@
-
+"use client"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 type AboutProps = {
   isHomePage: boolean;
-}
+};
 
-const About : React.FC<AboutProps> = ({ isHomePage })=> {
+const About: React.FC<AboutProps> = ({ isHomePage }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 640);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <div className="w-3/4 p-8">
-      <h2 className=" text-center text-xl tracking-tight text-gray-900 sm:text-2xl mb-10" style={{ textDecoration: "underline" }}>
-        About Us
-      </h2>
+    <div className="w-full md:w-3/4 p-8 mx-auto">
+      <Link legacyBehavior href="/about">
+        <h2 className="text-center justify-center text-xl tracking-tight text-gray-900 sm:text-xl mb-10 hover:text-indigo-500" style={{ textDecoration: "underline" }}>
+          About Us
+        </h2>
+      </Link>
       {isHomePage ? (
         <div className="text-center">
-          <p>
-            Shanghai Fancy Technology Co. Ltd. is a leading manufacturer and supplier of high-quality epoxy resins. Our product portfolio includes casting resin, deep pour resin, floor resin, craft resin, and industrial resin. We specialize in developing and producing customized epoxy resins that meet the unique needs and specifications of our customers ......
+          <p className="text-sm md:text-base lg:text-lg xl:text-xl">
+            Shanghai Fancy Technology Co. Ltd. is a leading manufacturer and supplier of high-quality epoxy resins. Our product portfolio includes casting resin, deep pour resin, floor resin, craft resin, and industrial......
           </p>
           <Link legacyBehavior href="/about">
             <a className="text-base font-medium text-indigo-600 hover:text-indigo-500">
@@ -23,7 +39,7 @@ const About : React.FC<AboutProps> = ({ isHomePage })=> {
           </Link>
         </div>
       ) : (
-        <p>
+        <p className="text-sm md:text-base lg:text-lg xl:text-xl">
           Shanghai Fancy Technology Co. Ltd. is a leading manufacturer and supplier of high-quality epoxy resins. Our product portfolio includes casting resin, deep pour resin, floor resin, craft resin, and industrial resin. We specialize in developing and producing customized epoxy resins that meet the unique needs and specifications of our customers.
 
           Our resins are used in a wide range of applications, from art and crafts to industrial manufacturing. We serve customers in various industries, including automotive, construction, electronics, and woodworking. Our goal is to provide our customers with the best possible solutions and the highest level of customer service.
@@ -35,7 +51,6 @@ const About : React.FC<AboutProps> = ({ isHomePage })=> {
       )}
     </div>
   );
-}
+};
 
-export default About
-  
+export default About;

@@ -2,7 +2,7 @@ import Products from "@/components/Products";
 
 const ProductsPage : React.FC = () => {
     return (
-        <div>
+        <div className="mt-36">
             <Products products={[]}  />
         </div>
     )

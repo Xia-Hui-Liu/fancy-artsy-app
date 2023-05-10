@@ -4,7 +4,7 @@ import SideBar from "@/components/SideBar"
 
 const AboutPage: React.FC = () => {
   return (
-      <div className="flex flex-row mt-24">
+      <div className="flex flex-row mt-28">
         <SideBar />
         <About isHomePage={false} />
       </div>

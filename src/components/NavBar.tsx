@@ -59,8 +59,8 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 bg-white">
-      <div className="flex item-center flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="fixed w-full z-20 top-0 left-0 border-b border-gray-200 bg-white my-0 h-26">
+      <div className="flex item-center flex-wrap items-center justify-between mx-auto p-0">
         <a className="flex item-center lg:ml-10">
           <Image src="/images/logo.jpg" alt="logo" width={130} height={130} />
         </a> 
@@ -94,16 +94,18 @@ const Navbar: React.FC = () => {
               {links.map(({ href, text }, index) => (
                 href === "/products"?
                 <div key={index} className="relative md:inline-flex md:w-auto w-full" ref={productsRef}>
-                  <button
-                    onClick={toggleProducts}
-                    className="inline-flex items-center px-2 py-2 w-full rounded-md border border-transparent  hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 sm:text-sm md:text-xl lg:text-2xl"
-                    id="options-menu"
-                    aria-haspopup="true"
-                    aria-expanded="true"
-                    >{text}
-                    <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                  </button>
+                  <Link href={href} key={index} legacyBehavior>
+                    <button
+                      onClick={toggleProducts}
+                      className="inline-flex items-center px-2 py-2 w-full rounded-md border border-transparent  hover:text-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 sm:text-sm md:text-xl lg:text-2xl"
+                      id="options-menu"
+                      aria-haspopup="true"
+                      aria-expanded="true"
+                      >{text}
+                      <svg className="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                  </Link>
                   <Dropdown isOpen={isProductsOpen} />
                 </div>
                   :
